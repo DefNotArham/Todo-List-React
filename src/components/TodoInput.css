@@ -1,0 +1,60 @@
+.todoInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.todoInput input {
+  background-color: #1a1d2c;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  padding: 15px;
+  font-size: 15px;
+  width: 30rem;
+  border-radius: 10px;
+}
+
+.todoInput button {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 6rem;
+  border: none;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.todoInput input::placeholder {
+  color: #aaaaaa;
+}
+
+@media (max-width: 639px) {
+  .todoInput input {
+    width: 25rem;
+  }
+
+  .todoInput button {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 522px) {
+  .todoInput input {
+    width: 18rem;
+  }
+
+  .todoInput button {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .todoInput input {
+    width: 14rem;
+  }
+  .todoInput button {
+    width: 3.5rem;
+  }
+}

@@ -1,0 +1,76 @@
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  height: 35rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.todo {
+  background-color: #1a1d2c;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.todo-text {
+  flex: 1;
+  margin-right: 15px;
+  word-break: break-word;
+}
+
+.todo.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: gray;
+}
+
+.todos-container::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.checkBtn,
+.deleteBtn {
+  background-color: green;
+  color: #fff;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  background-color: red;
+}
+
+@media (min-width: 640px) {
+  .todo {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .todo {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .todo {
+    width: 20rem;
+  }
+}
